@@ -259,7 +259,7 @@ footer {
     }
 
     .menu-item {
-        flex-direction: column; /* Cambia la dirección a vertical */
+        flex-direction: flex; /* Cambia la dirección a vertical */
         align-items: center; /* Centra el contenido */
         width: 100%; /* El contenedor ocupa todo el ancho */
     }
@@ -273,7 +273,7 @@ footer {
         display: flex;
         flex-direction: column;
         align-items: center;
-        background-color: #ff6600; /* Fondo opcional */
+        background-color: white; /* Fondo opcional */
     }
 
     nav ul li {
