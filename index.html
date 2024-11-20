@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alitas Deliciosas</title>
+    <link rel="stylesheet" href="./Frontend/css/inicio.css">
+    <!-- Incluye el archivo CSS de AOS -->
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+        <!-- Favicon estándar -->
+    <link rel="icon" href="./Frontend/imagenes/pestaña.png" type="image/x-icon">
+
+    <!-- Iconos para dispositivos Apple -->
+    <link rel="apple-touch-icon" sizes="180x180" href="./Frontend/imagenes/pestaña.png">
+
+    <!-- Iconos de diferentes tamaños -->
+    <link rel="icon" type="image/png" sizes="32x32" href="./Frontend/imagenes/pestaña.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./Frontend/imagenes/pestaña.png">
+
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#inicio" class="nav-link">Inicio</a></li>
+                <li><a href="#menu" class="nav-link">Menú</a></li>
+                <li><a href="#datos" class="nav-link">Datos del Negocio</a></li>
+            </ul>
+        </nav>
+        
+        <div class="hero" data-aos="fade-in">
+            <!-- Agregar un logo -->
+            <img src="./Frontend/imagenes/logo.png" alt="Logo de Alitas Deliciosas" class="logo">
+            <h1>¡Bienvenido a Alitas Deliciosas!</h1>
+            <p>Las mejores alitas de la ciudad</p>
+        </div>
+    </header>
+    <!-- Slider de Imágenes -->
+<div class="slider-container" id="slider">
+    <div class="slider-slide">
+        <img src="./Frontend/imagenes/1.jpg" alt="Imagen 1">
+    </div>
+    <div class="slider-slide">
+        <img src="./Frontend/imagenes/2.jpg" alt="Imagen 2">
+    </div>
+    <div class="slider-slide">
+        <img src="./Frontend/imagenes/3.jpg" alt="Imagen 3">
+    </div>
+    <!-- Botones de navegación -->
+    <button class="slider-btn prev-btn">&#10094;</button>
+    <button class="slider-btn next-btn">&#10095;</button>
+    <!-- Indicadores -->
+    <div class="slider-indicators" id="slider-indicators"></div>
+</div>
+
+
+    <main>
+        <!-- Sección de Inicio -->
+        <section id="inicio" class="section" data-aos="fade-up">
+            <h2>Sobre Nosotros</h2>
+            <p>En Alitas Deliciosas, ofrecemos alitas jugosas, crujientes y con las mejores salsas. Nuestra pasión es brindar el mejor sabor y una experiencia inolvidable.</p>
+        </section>
+
+        <!-- Sección de Menú -->
+        <section id="menu" class="section" data-aos="fade-left">
+            <h2>Menú</h2>
+            <div class="menu-item" data-aos="zoom-in">
+                <img src="./Frontend/imagenes/1.jpg" alt="Alitas Clásicas" class="menu-image">
+                <div class="menu-content"></div>
+                <h3>Alitas Clásicas</h3>
+                <p>12 piezas - $150 MXN</p>
+                <p>24 piezas - $280 MXN</p>
+            </div>
+            <div class="menu-item" data-aos="zoom-in" data-aos-delay="200">
+                <img src="./Frontend/imagenes/2.jpg" alt="Alitas Picantes" class="menu-image">
+                <h3>Alitas Picantes</h3>
+                <p>12 piezas - $160 MXN</p>
+                <p>24 piezas - $300 MXN</p>
+            </div>
+            <div class="menu-item" data-aos="zoom-in" data-aos-delay="400">
+                <img src="./Frontend/imagenes/3.jpg" alt="Combo Familiar" class="menu-image">
+                <h3>Combo Familiar</h3>
+                <p>50 piezas + papas - $600 MXN</p>
+            </div>
+            <p class="menu-note">* Pregunta por nuestras salsas especiales</p>
+        </section>
+
+        <!-- Sección de Datos del Negocio -->
+        <section id="datos" class="section" data-aos="fade-right">
+            <h2>Contáctanos</h2>
+            <p>Teléfono: +52 555-123-4567</p>
+            <p>Email: contacto@alitasdeliciosas.com</p>
+            <p>Dirección: Calle Sabrosa #123, Ciudad de México</p>
+            <p>Horario: Lunes a Domingo - 12:00 PM a 10:00 PM</p>
+        </section>
+    </main>
+    <a href="https://wa.me/5215551234567?text=Hola%20me%20gustaría%20saber%20más%20sobre%20sus%20alitas!" class="whatsapp-float" target="_blank" title="Chatea con nosotros">
+        <img src="./Frontend/imagenes/whatsapp.png" alt="WhatsApp" class="whatsapp-icon">
+    </a>
+    
+
+    <!--<footer data-aos="fade-up">
+        <p>&copy; 2024 Alitas Deliciosas. Todos los derechos reservados.</p>
+    </footer> -->
+
+    <!-- Incluye el archivo JS de AOS -->
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+        AOS.init(); // Inicializar AOS
+    </script>
+    <script src="./Frontend/js/inicio.js"></script>
+</body>
+</html>
