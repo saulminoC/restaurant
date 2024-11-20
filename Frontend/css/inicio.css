@@ -252,3 +252,37 @@ footer {
 #menu h2 {
     color: #ffffff; /* Cambia este valor por el color que desees */
 }
+/* Estilos para dispositivos móviles (pantallas pequeñas) */
+@media (max-width: 768px) {
+    body {
+        font-size: 14px; /* Ajusta el tamaño de la fuente */
+    }
+
+    .menu-item {
+        flex-direction: column; /* Cambia la dirección a vertical */
+        align-items: center; /* Centra el contenido */
+        width: 100%; /* El contenedor ocupa todo el ancho */
+    }
+
+    .menu-item img {
+        max-width: 80%; /* Reduce el tamaño de la imagen */
+        margin-bottom: 10px; /* Espacio entre la imagen y el texto */
+    }
+
+    nav ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: #ff6600; /* Fondo opcional */
+    }
+
+    nav ul li {
+        margin: 5px 0; /* Espacio entre los enlaces */
+    }
+
+    nav ul li a {
+        display: block;
+        width: 100%; /* Ocupa todo el ancho del contenedor */
+        text-align: center;
+    }
+}

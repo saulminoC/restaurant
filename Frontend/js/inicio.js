@@ -61,3 +61,17 @@ slides[currentSlide].classList.add('active');
 
 // Iniciar el auto-slide
 startAutoSlide();
+
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function(e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        const offset = 85; // Ajusta según el tamaño de tu header
+        const position = target.offsetTop - offset;
+
+        window.scrollTo({
+            top: position,
+            behavior: 'smooth'
+        });
+    });
+});
